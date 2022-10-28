@@ -12,15 +12,9 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello world!"
-  display_date:
-    runs-on: ubuntu-latest
-    steps:
       - name: Display date
         run: |
           date
-  display_current_directory:
-    runs-on: ubuntu-latest
-    steps:
       - name: Display current dir
         run: |
           ls -l
