@@ -7,8 +7,20 @@ on:
 
 jobs:
   hello_world_job:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Say hello
         run: |
           echo "Hello world!"
+  display_date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display date
+        run: |
+          date
+  display_current_directory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display current dir
+        run: |
+          ls -l
